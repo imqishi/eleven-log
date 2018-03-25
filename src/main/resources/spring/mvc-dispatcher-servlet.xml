@@ -32,11 +32,9 @@
     <!--注解驱动，可以将请求参数绑定到控制器参数  -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
     <mvc:annotation-driven/>
-    <!--静态资源处理
-    <mvc:resources location="/resources/" mapping="/resources/**"/>
-    -->
 
-    <!-- 配置SpringMVC的视图渲染器， 让其前缀为:/ 后缀为.jsp  将视图渲染到/page/<method返回值>.jsp中 -->
+    <mvc:resources location="/resources/" mapping="/resources/**"/>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/WEB-INF/views/" />

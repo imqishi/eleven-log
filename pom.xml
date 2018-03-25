@@ -8,6 +8,10 @@
     <artifactId>eleven-log</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>war</packaging>
+    <name>eleven-log</name>
+    <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -154,7 +158,7 @@
     </dependencies>
 
     <build>
-        <finalName>eleven-log</finalName>
+        <finalName>elevenLog</finalName>
         <plugins>
             <!--生成jar包-->
             <plugin>
@@ -192,7 +196,7 @@
                 <configuration>
                     <!--配置访问路径-->
                     <webApp>
-                        <contextPath>/eleven-log</contextPath>
+                        <contextPath>/</contextPath>
                     </webApp>
                     <httpConnector>
                         <port>8090</port>

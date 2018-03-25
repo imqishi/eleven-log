@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 
 @Controller
-@RequestMapping(value = "/")
+@RequestMapping(value = "/test")
 public class HelloWorld {
-    @RequestMapping(value = "hello", method = RequestMethod.GET)
     @ResponseBody
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello() {
         return "Hello World!";
     }
