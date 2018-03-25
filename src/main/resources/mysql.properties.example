@@ -1,0 +1,8 @@
+#database type
+dbType=mysql
+
+#mysql
+mysql_driverName=com.mysql.jdbc.Driver
+mysql_url=jdbc\:mysql\://127.0.0.1\:3306/test?useUnicode\=true&characterEncoding\=UTF-8&useCursorFetch\=true&defaultFetchSize\=10
+mysql_username=mysql
+mysql_password=mysql123
